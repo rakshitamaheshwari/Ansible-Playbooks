@@ -1,7 +1,7 @@
 - hosts: localhost
   vars_prompt:
         - name: y
-          prompt: "enter the service"
+          prompt: "enter the service name"
           private: no
         - name: x
           prompt: "Should the service be persistent (y/n)"
