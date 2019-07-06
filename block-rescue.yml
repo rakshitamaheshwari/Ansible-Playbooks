@@ -2,10 +2,10 @@
   tasks:
      - block: 
          - copy:
-              src: "/etc/examhost"
-              dest: "/var/index.html"
+              src: "source_file_path"
+              dest: "Destination_path"
      - rescue: 
          - copy:
               content: "You have to copy it manually"
-              dest: "/var/index.html"
+              dest: "dest_path"
               
