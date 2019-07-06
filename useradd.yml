@@ -4,9 +4,9 @@
      prompt: "enter paswd"
      private: yes
      encrypt: "sha512_crypt"
-   #  confirm: yes
+     confirm: yes
   tasks:
       - user: 
-         name: harr
+         name: user_name
          password: "{{ passwd }}"
          
