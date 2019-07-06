@@ -2,8 +2,8 @@
   tasks:        
        - twilio : 
                 msg: "Hello, From twilio."
-                account_sid: "AC5186e3d0233838a2236dd8a081a96935"
-                auth_token: "079a26d27271e7dbd81bc6283e8c1a9c"
-                from_number: "+13082170920"
-                to_number: "+91 8209046716"
+                account_sid: "your_account_sid"
+                auth_token: "your_auth_token"
+                from_number: "your_twilio_acnt_number"
+                to_number: "your_phone_number"
          delegate_to: localhost
