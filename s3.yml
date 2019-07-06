@@ -1,6 +1,6 @@
 - hosts: localhost
   tasks:
-     - name: "pip install boto and boto 3"
+     - name: "pip install boto and botocore"
        pip:
            name: "boto3"
            state: present
@@ -11,9 +11,9 @@
 
      - name: "creating s3 bucket"
        aws_s3: 
-           aws_access_key: "AKIAIDFWY2HGCR6ORGWA"
-           aws_secret_key: "3T+HA0gs1jb/MUznWHvZhaUtTPe2P4brEyxmsbuT"
+           aws_access_key: "your_access_key_here"
+           aws_secret_key: "your_secret_key_here"
            region: "ap-south-1"
-           bucket: "sthuti8598"
+           bucket: "bucket_name"
            mode: create
            permission: "public-read"
