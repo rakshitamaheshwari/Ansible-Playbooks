@@ -2,4 +2,4 @@
   tasks:
      - copy:
          content: "Hello {{ansible_virtualization_role }}"
-         dest: "/home/devops/ws"
+         dest: "dest_path"
