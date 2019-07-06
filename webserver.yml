@@ -5,7 +5,7 @@
                 state: present
         - copy: 
                 dest: "/var/www/html" 
-                src: "/root/index.html"
+                src: "/root/Desktop/index.html"
         - service:
                 name: "httpd" 
                 state: started
