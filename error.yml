@@ -25,4 +25,4 @@
   
      - debug:
           msg: "Playbook was unsuccessful"
-       when: x.failed != false or y.failed != true
+       when: x.failed = true or y.failed != true
