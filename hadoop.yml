@@ -1,4 +1,4 @@
-- hosts: 192.168.43.64, slaves
+- hosts: master_ip, slaves
   tasks:
        - get_url:
              url: "ftp://192.168.43.64/pub/hadoop-1.2.1-1.x86_64.rpm"
@@ -24,8 +24,8 @@
        - replace: 
            path: "/etc/hadoop/core-site.xml"
            regexp: "192.168.43.64"
-           replace: "192.168.43.64" 
-- hosts: 192.168.43.64
+           replace: "master_ip" 
+- hosts: master_ip
   tasks:
       - file:
            path: "/master"
@@ -54,7 +54,7 @@
            dest: "/etc/hadoop/hdfs-site.xml"
 
      
-- hosts: 192.168.43.64
+- hosts: master_ip
   tasks: 
       - command: "hadoop namenode -format"
       - command: "hadoop-daemon.sh start namenode"
