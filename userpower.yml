@@ -12,7 +12,7 @@
         salt_size: 7
 
       - name: question
-        prompt: "do you wish to give sudo power? Enter 1 for Yes and  2 for NO"
+        prompt: "Do you wish to give sudo power to user? Enter 1 for Yes and  2 for NO:"
         private: no
   tasks:
         - user:
