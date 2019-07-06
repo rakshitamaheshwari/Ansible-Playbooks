@@ -1,5 +1,5 @@
 - hosts : localhost
   tasks: 
      - copy: 
-        dest: /root/ansible.txt
-        content: "{{ansible_enp0s3.ipv4.address}} {{ansible_hostname}} {{ansible_processor_count}} {{ansible_enp0s3.macaddress}}"
+        dest: path_of_dest_file
+        content: "{{ansible_default_ipv4.address}} {{ansible_hostname}} {{ansible_processor_count}} {{ansible_macaddress}}"
