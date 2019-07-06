@@ -1,0 +1,15 @@
+- hosts: localhost
+  tasks: 
+        - name: "Sthuti"
+          mail: 
+                        host: "smtp.gmail.com"
+                        port: "587"
+                        username: "sthuti9855h@gmail.com"
+                        password: "sthuti8598"
+                        to: "rakshitamaheshwari99@gmail.com"
+                        subject: "Test"
+                        body: "Ansible Test Successful"
+                        attach: "/root/Desktop/menu.png"
+          delegate_to: localhost
+
+        
