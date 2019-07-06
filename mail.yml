@@ -1,15 +1,15 @@
 - hosts: localhost
   tasks: 
-        - name: "Sthuti"
+        - name: "Send a mail"
           mail: 
                         host: "smtp.gmail.com"
                         port: "587"
-                        username: "sthuti9855h@gmail.com"
-                        password: "sthuti8598"
-                        to: "rakshitamaheshwari99@gmail.com"
+                        username: "sender's_email_id"
+                        password: "your_pswd"
+                        to: "receiver's_email_id"
                         subject: "Test"
                         body: "Ansible Test Successful"
-                        attach: "/root/Desktop/menu.png"
+                        attach: "file_path_to_attach"
           delegate_to: localhost
 
         
