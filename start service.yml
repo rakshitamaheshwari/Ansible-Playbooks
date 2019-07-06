@@ -1,0 +1,11 @@
+- hosts: localhost
+  vars_prompt:
+        - name: y
+          prompt: "enter the service"
+          private: no
+  tasks:
+      - systemd:
+            name: "{{y}}"
+            state: restarted
+            enabled: yes
+

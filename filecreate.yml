@@ -1,0 +1,10 @@
+- hosts: localhost
+  vars_prompt:
+        - name: y
+          prompt: "enter the filename"
+          private: no
+
+  tasks:
+      - file:
+           path: /root/Documents/"{{y}}"
+           state: touch

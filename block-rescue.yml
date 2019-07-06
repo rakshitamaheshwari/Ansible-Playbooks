@@ -1,0 +1,11 @@
+- hosts: localhost
+  tasks:
+     - block: 
+         - copy:
+              src: "/etc/examhost"
+              dest: "/var/index.html"
+     - rescue: 
+         - copy:
+              content: "You have to copy it manually"
+              dest: "/var/index.html"
+              

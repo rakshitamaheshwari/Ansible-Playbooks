@@ -1,0 +1,21 @@
+- hosts: all
+  tasks: 
+    - package:
+         name: "nfs-utils"
+         state: present
+    - copy:
+         src: "/abc"
+         dest: "/abc"
+    - lineinfile:
+         path: "/etc/exports"
+         line: "/abc *"
+         create: no
+    - service: 
+         name: "nfs"
+         state: started
+         enabled: yes
+    - firewalld:
+         state: enabled
+         service: "nfs"
+         immediate: yes
+         permanent: yes
