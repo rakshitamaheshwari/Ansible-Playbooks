@@ -5,12 +5,12 @@
                 state: present 
         - ec2:
                 region: "ap-south-1"
-                key_name: "st2019lwkey"
+                key_name: "your_key_pair_name"
                 instance_type: "t2.micro"
                 image: "ami-5b673c34"
                 wait: yes
-                vpc_subnet_id: "subnet-3f4c1057"
+                vpc_subnet_id: "your_subnet_id_here"
                 assign_public_ip: yes
-                aws_access_key: "AKIAIDFWY2HGCR6ORGWA"
-                aws_secret_key: "3T+HA0gs1jb/MUznWHvZhaUtTPe2P4brEyxmsbuT"
+                aws_access_key: "your_access_key_here"
+                aws_secret_key: "your_secret_key_here"
 
