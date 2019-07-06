@@ -4,11 +4,11 @@
          name: "nfs-utils"
          state: present
     - copy:
-         src: "/abc"
-         dest: "/abc"
+         src: "directory_path_to_export"
+         dest: "dest_path"
     - lineinfile:
          path: "/etc/exports"
-         line: "/abc *"
+         line: "dir_name ip_names_to_provide_access"
          create: no
     - service: 
          name: "nfs"
