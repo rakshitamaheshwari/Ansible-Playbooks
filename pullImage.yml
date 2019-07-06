@@ -2,6 +2,6 @@
   tasks: 
      - name: Pull image
        docker_image:
-            name: centos
+            name: Image_to_pull
             tag: latest 
             pull: yes
