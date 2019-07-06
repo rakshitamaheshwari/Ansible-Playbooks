@@ -17,9 +17,9 @@
                 enabled: yes
         - name: ssh copy id
           authorized_key:
-                user: devops
+                user: user_name
                 state: present
                 key: "{{ lookup('file', '/root/.ssh/id_rsa.pub') }}"
-                path: /etc/ssh/authorized_keys/devops
+                path: /etc/ssh/authorized_keys/user_name
                 manage_dir: False
                 validate_certs: False
