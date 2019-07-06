@@ -1,7 +1,7 @@
 - hosts: localhost
   tasks: 
         - docker_container:
-                        name: "newos1"
+                        name: "docker_name"
                         image: "centos"
                         state: started
                         restart: yes
