@@ -1,4 +1,4 @@
-- hosts: home
+- hosts: all
   vars_prompt:
         - name: i
           prompt: "enter the service"
