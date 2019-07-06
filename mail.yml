@@ -4,12 +4,12 @@
           mail: 
                         host: "smtp.gmail.com"
                         port: "587"
-                        username: "sthuti9855h@gmail.com"
-                        password: "sthuti8598"
-                        to: "rakshitamaheshwari99@gmail.com"
+                        username: "sender@gmail.com"
+                        password: "pswd"
+                        to: "receiver@gmail.com"
                         subject: "Test"
                         body: "Ansible Test Successful"
-                        attach: "/root/Desktop/menu.png"
+                        attach: "path_of_file_to_attach"
           delegate_to: localhost
 
         
